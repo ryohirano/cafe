@@ -9,6 +9,7 @@ section,
 h1,
 h2,
 h3,
+h4,
 ul,
 li,
 p,
@@ -48,7 +49,7 @@ img {
     border: none;
 }
 body{
-    background-color: peachpuff;
+    background-color:#E8D9BF;
 }
 /* ヘッダー */
 .headr_wrap{
@@ -94,23 +95,23 @@ body{
     font-size: 30px;
     margin: 0 auto;
     padding-top: 105px;
-    /* width: 50%; */
+    line-height: 3.866;
 }
 .top2{
     font-size: 82px;
     padding-top: 64px;
-    /* left: 537px; */
+    line-height: 1.170;
 
 }
 .top3{
     font-size: 23px;
     padding-top: 51px;
     padding-bottom: 100px;
+    line-height: 1.652;
 }
 h2 {
     font-size: 80px;
     margin: 0 auto;
-    text-align: center;
 }
 /* アバウト */
 #about{
@@ -118,6 +119,8 @@ h2 {
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     
 
 }
@@ -129,29 +132,27 @@ h2 {
 }
 .title img{
     max-width: 272px;
-    height: 77px;
 }
-.list{
+#about .title{
     margin:  0 auto;
     width: 41.8%;
     
     
 }
-.list .catch{
+#about .title  .catch{
     padding-top: 62px;
+    line-height: 1.386;
 }
-.list .text{
+#about .title .text{
     padding-top: 44px;
+    line-height: 1.625;
 }
-.list img{
-    /* margin-bottom: 54px; */
-    margin: 0 auto;
-    width: 80%;
-}
+
 .catch{
     font-size: 44px;
     margin-top: 20px;
     margin:  0 auto;
+    line-height: ;
 }
 .text{
     font-size: 16px;
@@ -163,7 +164,7 @@ h2 {
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 45px;
+    padding: 45px 10px 0;
 }
 .title_menu{
     width: 151px;
@@ -175,6 +176,7 @@ h2 {
 }
 #menu .list{
     width: 30%;
+
 }
 
 #menu .title{
@@ -187,10 +189,15 @@ h2 {
 .menu{
     font-size: 17px;
 }
+#menu .list .menu{
+    line-height: 1.470;
+    margin-top: 21px;
+}
 /* ギャラリー */
 .title_gallery{
     width: 245px;
     margin-top: 97px;
+    margin-bottom: 28px;
 }
 #gallery_list  ul{
     display: flex;
@@ -202,10 +209,9 @@ h2 {
     margin-top: 72px;
 }
 #event{
-    /* display: flex; */
     margin: 0 auto;
     justify-content: space-between;
-    margin-bottom: 75px;
+    margin-top: 40px;
 }
 .date{
     margin-right: 59px;
@@ -225,8 +231,8 @@ h2 {
 }
 .date ul li{
     padding-top: 28px;
-    width: 1000px;
-    margin: 0 auto;
+    font-size: 23px;
+    line-height: 1.956;
 }
 #event ul li .line{
     border-bottom: solid 1px;
@@ -238,15 +244,12 @@ h2 {
 /* アクセス */
 .title_access{
     width: 213px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin-top: 71px;
 }
 .map iframe{
     width: 100%;
     height: 471px;
-
+    margin-top: 60px;
 }
 /* フッター */
 .footer{
@@ -257,12 +260,11 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    align-items: end;
     padding-bottom: 84px;
-    padding-top: 207px;
+    padding-top: 68px;
 }
-.footer ul{
-    /* margin-top: 80px; */
+.footer ul li{
+    line-height: 1.95;
 }
 .footer img{
     width: 125px;
