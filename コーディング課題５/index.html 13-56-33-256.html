@@ -7,6 +7,8 @@
     <title>カフェ</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="デザインカフェ近日オープン">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -21,7 +23,8 @@
                 <li><a href="#title">ACCESS</a></li>
             </ul>
         </nav>
-            <ul id="sp_nav">
+            <div class="sp_btn"><span></span></div>
+            <ul id="sp_nav" class="sp_nav">
                 <li><a href="#about">ABOUT US</a></li>
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#gallery_list">GALLERY</a></li>
@@ -141,6 +144,13 @@
     
     </main>
 
-
+<script>
+    $(function(){
+        $('.sp_btn').on('click',function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+        });
+    });
+</script>
 </body>
 </html>
