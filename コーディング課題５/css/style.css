@@ -85,6 +85,12 @@ body{
 .slider img{
     width: 100%;
 }
+.pc{
+    display: block !important;
+}
+.sp{
+    display: none !important;
+}
 #sp_nav,
 .sp_btn{
     display: none;
@@ -133,7 +139,7 @@ h2 {
 .about img{
     border-bottom-right-radius: 40px;
 }
-.title img{
+.title_about{
     max-width: 272px;
 }
 #about .title{
@@ -297,6 +303,8 @@ h2 {
         right: 15px;
         cursor: pointer;
         height: 33px;
+        right: 15px;
+        z-index: 999;
     }
     .sp_btn span{
         width: 33px;
@@ -305,7 +313,6 @@ h2 {
         display: block;
         position: relative;
         top: 15px;
-        right: 15px;
     }
     .sp_btn span::before,
     .sp_btn span::after{
@@ -359,7 +366,69 @@ h2 {
         font-family:  "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     }
+    
 
 @media screen and (max-width:767px){
+    /* ヘッダー */
+    .pc{
+        display: none !important;
+    }
+    .sp{
+        display: block !important;
+    }
+    /* トップ */
+    .top2{
+        text-align: center;
+    }
+    
+    /* アバウト */
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #about img{
+        border-bottom-right-radius: 0;
 
-}
+    }
+    .pc{
+        display: none !important;
+        width: 100%;
+    }
+    .sp{
+        display: block !important;
+    }
+    #about img .sp{
+        width: 100%;
+    }
+    .about .fot{
+        width: 100%;
+    }
+    /* メニュー */
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .pc{
+        display: none !important;
+    }
+    .sp{
+        display: block !important;
+    }
+    /* イベント */
+    .date{
+        display: flex;
+    
+    }
+    /* ギャラリー */
+    #gallery_list{
+        display: block;
+    }
+    /* フッター */
+    .footer .list{
+        display: flex;
+        flex-direction: column;
+    }
