@@ -405,12 +405,20 @@ h2 {
     .about .fot{
         width: 100%;
     }
+    .catch{
+        width: 100%;
+    }
     /* メニュー */
     #menu {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
 
+    }
+    #menu .list{
+        margin-bottom: 75px;
+        max-width: 30%;
     }
     .pc{
         display: none !important;
@@ -421,9 +429,15 @@ h2 {
     /* イベント */
     .date{
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     
     }
     /* ギャラリー */
+    .title_gallery{
+        margin-top: 15px;
+    }
     #gallery_list{
         display: block;
     }
