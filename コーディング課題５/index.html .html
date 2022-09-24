@@ -58,8 +58,8 @@
             <div class="about">
                 <h2 class="title_about"><img class="sp" src="images/about_us@2x.png" alt="ABOUT USタイトル"></h2>
                 <picture>
-                    <source srcset="images/about_us@2x-100.jpg 13-56-41-386.jpg" media="(max-width:767px)">
-                    <img  src="images/pc_about-100.jpg" alt="乾杯している写真">
+                    <source srcset="images/about_us@2x-100.jpg" media="(max-width:767px)">
+                    <img class="kp" src="images/pc_about-100.jpg" alt="乾杯している写真">
                 </picture>
             </div>
                 <div class="title">
@@ -108,7 +108,7 @@
                         <li><img class="pc" src="images/pc_gallary_01-100.jpg" alt="コーヒの写真"></li>
                     </ul>
                 </div>
-                <div class="gallery_list sp">
+                <div class="slidershow">
                     <ul>
                         <li><img class="sp" src="images/mobile_gallery-100.jpg" alt="リラックスしている様子"></li>
                         <li><img class="sp" src="images/pc_gallary_04-100.jpg" alt="豆の写真"></li>
@@ -175,8 +175,20 @@
             $('.sp_nav').fadeToggle();
             $('.sp_btn').toggleClass('open');
         });
-        $('.title_about pc').on()
+        $('.slidershow').each(function(){
+            var $slides = $(this).find('img'),
+                slidecount = $slides.length,
+                currentindex = 0;
+            $slides.ep(currentindex).fadein();
+            function shownextslide (){
+                var nextindex=(currentindex+1)% slidecount;
+                $slides.ep(currentindex).fadeout();
+                $slides.ep(currentindex).fadein();
+                currentindex=nextindex;
+            }
+        }
     });
+
 </script>
 </body>
 </html>
