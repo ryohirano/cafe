@@ -52,7 +52,7 @@ body{
     background-color:#E8D9BF;
 }
 /* ヘッダー */
-.headr_wrap{
+#headr_wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,12 +98,14 @@ body{
 /* top */
 .top {
     margin: 0 auto;
-    text-align: center;;
+    text-align: center;
 }
 .top1 {
     font-size: 30px;
     margin: 0 auto;
     padding-top: 105px;
+}
+.top1 p{
     line-height: 3.866;
 }
 .top2{
@@ -116,6 +118,8 @@ body{
     font-size: 23px;
     padding-top: 51px;
     padding-bottom: 100px;
+}
+.top3 p{
     line-height: 1.652;
 }
 h2 {
@@ -141,6 +145,8 @@ h2 {
 }
 .title_about{
     max-width: 272px;
+    margin:  0 auto;
+
 }
 #about .title{
     margin:  0 auto;
@@ -176,7 +182,7 @@ h2 {
 }
 .title_menu{
     width: 151px;
-    padding-top: 50px;
+    padding-top: 103px;
 }
 #menu .list img{
     border-top-right-radius: 50px;
@@ -212,6 +218,7 @@ h2 {
     
 }
 /* イベント */
+
 .title_event{
     width: 174px;
     margin-top: 72px;
@@ -262,7 +269,6 @@ h2 {
 /* フッター */
 .footer{
     background-color: white;
-    display: flex;
 }
 .footer .list{
     max-width: 1000px;
@@ -350,6 +356,7 @@ h2 {
         top: 0;
         left: 0;
         align-items: center;
+        z-index: 100;
     }
     #sp_nav ul{
         height: 100%;
@@ -377,27 +384,45 @@ h2 {
         display: block !important;
     }
     /* トップ */
+    .top1{
+        font-size: 17px;
+    }
     .top2{
         text-align: center;
+        /* font-size: 10.133vh; */
+        font-size: 38px;
     }
-    
+    .top3{
+        font-size: 16px;
+    }
+    .top3 .sp{
+        line-height: 1.875;
+    }
     /* アバウト */
     #about{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        padding: 0;
         
     }
     #about img{
         border-bottom-right-radius: 0;
 
     }
+    .title_about{
+        padding-bottom: 17px;
+    }
+    h2{
+        font-size: 47px;
+    }
     .about {
         width: 100%;
     }
     #about .title{
         width: 100%;
+        padding: 0 10px;
     }
     .pc{
         display: none !important;
@@ -409,17 +434,29 @@ h2 {
     #about img .sp{
         width: 100%;
     }
+    .catch{
+        font-size: 36px;
+    }
+    
     /* メニュー */
     #menu {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; */
+        display: block;
+        margin: 0 35px;
 
     }
     #menu .list{
-        margin:0 34px 75px 40px;
+        /* margin:0 0 75px 0; */
         width: 100%;
+    }
+    #menu p{
+        padding-bottom: 75px;
+    }
+    #menu .title{
+        font-size: 40px;
     }
     .pc{
         display: none !important;
@@ -433,34 +470,51 @@ h2 {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 40px 20px 0 20px;
     
     }
+    /* .date ul{
+        padding: 0 32px;
+    } */
+    .date ul .line{
+        display: block;
+        text-decoration: underline;
+    }
+    .date ul  li{
+        font-size: 16px;
+    }
+    .date ul{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #event ul li .line{
+        border-bottom:none;
+    }
+    .event{
+        padding: 0 20px;
+    }
     /* ギャラリー */
+    .sp{
+        /* width: 100%; */
+    }
     .title_gallery{
         margin-top: 15px;
     }
     #gallery_list ul{
         display: flex;
         justify-content: space-between;
-    }
-    .slidershow{
-        overflow: hidden;
-        position: relative;
-        max-width: 767px;
-        height: 465px;
-    }
-    .slidershow img{
-        display: none;
-        position: absolute;
         width: 100%;
+    }
+    
+    /* アクセス */
+    .map .iframe{
+        width: 375px;
+        height: 191px;
+    }
+    .title_access{
+        /* margin: 32px 128px 10px 128px; */
     }
     /* フッター */
     .footer .list{
         display: flex;
         flex-direction: column;
-    }
-    .list .nav img{
-        position: fixed;
-        bottom: 150px;
     }

@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="headr_wrap">
+        <div id="headr_wrap">
         <h1 class="logo"><img src="images/design_cafe_logo_header@2x.png" alt="デザインカフェのロゴ"></h1>
         <nav class="pc_nav">
             <ul id="pc_nav">
@@ -20,7 +20,7 @@
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#gallery_list">GALLERY</a></li>
                 <li><a href="#event">EVENT</a></li>
-                <li><a href="#title">ACCESS</a></li>
+                <li><a href="#title_access">ACCESS</a></li>
             </ul>
         </nav>
             <div class="sp_btn"><span></span></div>
@@ -30,7 +30,7 @@
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#gallery_list">GALLERY</a></li>
                 <li><a href="#event">EVENT</a></li>
-                <li><a href="#title">ACCESS</a></li>
+                <li><a href="#title_access">ACCESS</a></li>
             </ul>
             </nav>
         </div>
@@ -44,13 +44,13 @@
     <main>
         <!-- top -->
         <div class="top">
-        <div class="top1"><p>Have a happy day From a cup of coffee.</p></div>
-        <div class="top2"><br>ハッピーに溢れる1日を<br>
+        <div class="top1">
+            <p>Have a happy day From a cup of coffee.</p></div>
+        <div class="top2">ハッピーに溢れる1日を<br>
             1杯のコーヒーから。</div>
-        <div class="top3"><p class="pc">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ
-            <br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。<br></p></div>
-        <div class="top3"><p class="sp">毎日を丁寧に大切に過ごしたい。<br>だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                <br>足を運んでくれるお客さんには落ち着く空間と<br>こだわりのコーヒーを提供したい。<br></p></div>
+            <div class="top3">
+                <p>毎日を丁寧に大切に過ごしたい。<br class="sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br class="sp">
+                <br class="pc">足を運んでくれるお客さんには落ち着く空間と<br class="sp">こだわりのコーヒーを提供したい。</p></div>
         </div>
         <!-- アバウト -->
         <section>
@@ -97,31 +97,26 @@
             </div>
         </section>
         <!-- ギャラリー -->
-        <section>
+        <section class="gallery">
             <h2 class="title_gallery"><img src="images/gallery@2x.png" alt="ギャラリータイトル"></h2>
-                <div id="gallery_list" class="gallery_list pc">
+                <div id="gallery_list" class="pc">
                     <ul>
-                        <li><img class="pc" src="images/pc_gallary_05-100.jpg" alt="リラックスしている様子"></li>
-                        <li><img class="pc" src="images/pc_gallary_04-100.jpg" alt="豆の写真"></li>
-                        <li><img class="pc" src="images/pc_gallary_03-100.jpg" alt="店の雰囲気"></li>
-                        <li><img class="pc" src="images/pc_gallary_02-100.jpg" alt=""></li>
-                        <li><img class="pc" src="images/pc_gallary_01-100.jpg" alt="コーヒの写真"></li>
+                        <li><img  src="images/pc_gallary_05-100.jpg" alt="リラックスしている様子"></li>
+                        <li><img  src="images/pc_gallary_04-100.jpg" alt="豆の写真"></li>
+                        <li><img  src="images/pc_gallary_03-100.jpg" alt="店の雰囲気"></li>
+                        <li><img  src="images/pc_gallary_02-100.jpg" alt=""></li>
+                        <li><img  src="images/pc_gallary_01-100.jpg" alt="コーヒの写真"></li>
                     </ul>
                 </div>
-                <div class="slidershow">
+                <div class="sp">
                     <ul>
-                        <li><img class="sp" src="images/mobile_gallery-100.jpg" alt="リラックスしている様子"></li>
-                        <li><img class="sp" src="images/pc_gallary_04-100.jpg" alt="豆の写真"></li>
-                        <li><img class="sp" src="images/pc_gallary_03-100.jpg" alt="店の雰囲気"></li>
-                        <li><img class="sp" src="images/pc_gallary_02-100.jpg" alt=""></li>
-                        <li><img class="sp" src="images/pc_gallary_01-100.jpg" alt="コーヒの写真"></li>
+                        <li><img  src="images/mobile_gallery-100.jpg" alt="リラックスしている様子"></li>
                     </ul>
                 </div>
         </section>
         <!-- イベント -->
-        <section>
+        <section class="event">
             <h2 class="title_event"><img src="images/event@2x.png" alt="eventタイトル"></h2>
-                <!-- <div class="event"> -->
                     <div id="event" class="date">
                     <ul>
                         <li>
@@ -137,7 +132,7 @@
                     </div>
         </section>
         <!-- アクセス -->
-        <section>
+        <section >
             <h2 id="title_access" class="title_access"><img src="images/access@2x.png" alt="アクセスタイトル"></h2>
             <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19868.32514975395!2d-0.14920352774304618!3d51.50329656994838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2z44Ot44Oz44OJ44Oz44O744Ki44Kk!5e0!3m2!1sja!2sjp!4v1662362452733!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -154,7 +149,7 @@
                     <li>東京都渋谷区東京南123デザインビルB1</li>
                     <li>MAIL：info@designcafe.tokyo</li>
                 </ul>
-            <a href="#pc_nav" class="nav"><img src="images/to_top@2x.png" alt=""></a>
+            <a href="#headr_wrap" class="nav"><img src="images/to_top@2x.png" alt=""></a>
             </div>
         </div>
         </footer>
@@ -175,18 +170,18 @@
             $('.sp_nav').fadeToggle();
             $('.sp_btn').toggleClass('open');
         });
-        $('.slidershow').each(function(){
-            var $slides = $(this).find('img'),
-                slidecount = $slides.length,
-                currentindex = 0;
-            $slides.ep(currentindex).fadein();
-            function shownextslide (){
-                var nextindex=(currentindex+1)% slidecount;
-                $slides.ep(currentindex).fadeout();
-                $slides.ep(currentindex).fadein();
-                currentindex=nextindex;
-            }
-        }
+        // $('.slidershow').each(function(){
+        //     var $slides = $(this).find('img'),
+        //         slidecount = $slides.length,
+        //         currentindex = 0;
+        //     $slides.ep(currentindex).fadein();
+        //     function shownextslide (){
+        //         var nextindex=(currentindex+1)% slidecount;
+        //         $slides.ep(currentindex).fadeout();
+        //         $slides.ep(currentindex).fadein();
+        //         currentindex=nextindex;
+        //     }
+        // }
     });
 
 </script>
